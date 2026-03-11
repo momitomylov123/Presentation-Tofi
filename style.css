@@ -1,0 +1,230 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial;
+    padding: 10px;
+    background: #ffffff;
+  }
+  
+  /* Título */
+  .header {
+    padding: 30px;
+    text-align:center;
+    background: rgb(156, 196, 152);
+  }
+/* Estilo de top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #333333;
+  }
+  
+  /* Estilo de la barra de navegación */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #a6c5af;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: #98bb8d;
+    color: rgb(53, 15, 15);
+  }
+/* Clear floats after the columns */
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+/* columna derecha */
+.rightcolumn {
+    float: left;
+    width: 25%;
+    background-color: rgb(154, 199, 154);
+    padding-left: 20px;
+  }
+/* imagen */
+.img {
+    /*background-color: #aaa;*/
+    width: 0%;
+    text-align: center;
+
+  }
+  
+  /* efecto de carta */
+  .card {
+    background-color: rgb(154, 199, 154);
+    padding: 20px;
+    margin-top: 20px;
+    align-items: center;
+  }
+  table, td, th {
+    border-collapse: collapse;
+  border: 1px solid rgb(39, 9, 9);
+}
+  /* tabla */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+  height: 100px;
+  text-align: center;
+}
+td {
+    text-align: center;
+    height: 60px;
+}
+tr:hover {background-color: #8ac482;}
+/*lista*/
+ul.a {
+  list-style-type: circle;
+}
+/*pie de página*/
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #72b375;
+  margin-top: 20px;
+}
+/* Manualidades */
+  /* Título*/
+  .headermanu {
+    padding: 30px;
+    text-align: center;
+    background: rgb(63, 60, 100);
+  }
+/* Estilo de la barra de navegación */
+.topnavmanu {
+    overflow: hidden;
+    background-color: #1f1f2e;
+  }
+  
+  /* Estilo de los links de topnav */
+  .topnavmanu a {
+    float: left;
+    display: block;
+    color: #a8a6c5;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change color on hover */
+  .topnavmanu a:hover {
+    background-color: #948dbb;
+    color: rgb(19, 15, 53);
+  }
+/* Clear floats after the columns */
+.rowmanu::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+/* columna derecha */
+.rightcolumnmanu {
+    float: left;
+    width: 25%;
+    background-color: rgb(164, 154, 199);
+    padding-left: 20px;
+  }
+  /* efecto de carta */
+  .cardmanu {
+    background-color: rgb(164, 154, 199);
+    padding: 20px;
+    margin-top: 20px;
+  }
+/* Amigos */
+  /* Título */
+  .headerami {
+    padding: 30px;
+    text-align: center;
+    background: rgb(196, 103, 168);
+  }
+/* Estilo de la barra de navegación */
+.topnavami {
+    overflow: hidden;
+    background-color: #a11d6d;
+  }
+  
+  /* Estilo de los links de topnav */
+  .topnavami a {
+    float: left;
+    display: block;
+    color: #d682b0;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change color on hover */
+  .topnavami a:hover {
+    background-color: hsl(320, 44%, 69%);
+    color: rgb(110, 20, 65);
+  }
+/* Clear floats after the columns */
+.rowami::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+/* columna derecha */
+.rightcolumnami {
+    float: left;
+    width: 25%;
+    background-color: rgb(255, 158, 198);
+    padding-left: 20px;
+  }
+  /* efecto de carta */
+  .cardami {
+    background-color: rgb(252, 165, 208);
+    padding: 20px;
+    margin-top: 20px;
+  }
+* {
+  box-sizing: border-box;
+}
+
+div.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+div.gallery-item {
+  margin: 5px;
+  border: 1px solid #ccc;
+  width: calc(25% - 20px);
+}
+
+div.gallery-item:hover {
+  border: 1px solid #777;
+}
+
+div.gallery-item img {
+  width: 100%;
+  height: auto;
+}
+
+div.gallery-item div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  div.gallery-item {
+    width: calc(50% - 20px);
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  div.gallery-item {
+    width: calc(100% - 20px);
+  }
+}
